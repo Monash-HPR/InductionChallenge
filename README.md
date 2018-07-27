@@ -64,7 +64,7 @@ Add the line
 ```
 from Modules.YourModuleName import *
 ```
-to the *__init__.py* file.
+to the *\_\_init\_\_.py* file.
 
 ## The Maths
 To reiterate, you **don't need to use the maths we give you** - it's just here as a reference. Feel free to play around with different equations to see what your rocket will do!
