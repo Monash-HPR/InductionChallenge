@@ -94,6 +94,13 @@ Thrust will be modelled by another made up equation (although its profile approx
 
 where we will use a peak thrust of *T0 = 100 N* and a burnout time of *tB = 2 s*.
 
+### Mass
+As your rocket motor burns, the total mass of the rocket will fall. For simplicity, we will assume a linear mass burn rate while the motor is running.
+
+![equation](http://www.sciweavers.org/upload/Tex2Img_1532668400/render.png)
+
+The total mass of your rocket should be *m = 25 kg*, which includes *9 kg* of fuel.
+
 ### Gravitation
 We will use a simple inverse square model of gravitation
 
