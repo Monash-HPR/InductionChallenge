@@ -69,7 +69,7 @@ We will model drag with the (hopefully familiar?) equation
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532664821/eqn.png)
 
-where you can approximate the wetted area by the rockets diameter of *D = 98 mm* and length of *L = 2.5 m*.
+where you can approximate the wetted area by the rocket's diameter of *D = 98 mm* and length of *L = 2.5 m*.
 The coefficient of drag is a function of Mach number is given by the following (completely made up) equation
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532667773/render.png)
@@ -95,14 +95,14 @@ Thrust will be modelled by another made up equation (although its profile approx
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532665925/eqn.png)
 
-where we will use a peak thrust of *T0 = 100 N* and a burnout time of *tB = 2 s*.
+where we will use a peak thrust of *T0 = 3000 N* and a burnout time of *tB = 4.5 s*. This equation mimics the behaviour of the N3300 motor that will likely be used to launch to 30,000 ft.
 
 ### Mass
 As your rocket motor burns, the total mass of the rocket will fall. For simplicity, we will assume a linear mass burn rate while the motor is running.
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532668400/render.png)
 
-The total mass of your rocket should be *m = 25 kg*, which includes *9 kg* of fuel.
+The total mass of your rocket should be *m = 25 kg*, which includes *9 kg* of fuel. This is a rough estimate of the weight breakdown of a 30,000 ft rocket.
 
 ### Gravitation
 We will use a simple inverse square model of gravitation
