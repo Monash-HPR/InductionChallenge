@@ -57,7 +57,7 @@ cdef int a = 3
 Although this is more verbose, it can often drastically improve the speed of your program. If you are writing functions, you can do the same thing. You can find examples of this in *Modules/Thrust.pyx* file.
 
 ## The Maths
-To reiterate, you **don't need to use the maths we give you** - it's just here as a reference. 
+To reiterate, you **don't need to use the maths we give you** - it's just here as a reference. Feel free to play around with different equations to see what your rocket will do!
 
 ### Drag
 We will model drag with the (hopefully familiar?) equation
