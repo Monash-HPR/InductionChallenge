@@ -31,9 +31,12 @@ Then clone this repository to get all of the juicy boilerplate code
 git clone https://github.com/Monash-HPR/InductionChallenge.git
 ```
 
-Navigate into the newly-made directory and switch to your branch (replace <name> with your name: eg. git checkout oliver)
+Navigate into the newly-made directory and make yourself a branch. This will be your playground to test and backup your code without breaking anyone else's.
 ```
+cd InductionChallenge
+git checkout -b <name>
 git checkout <name>
+git push origin <name>
 ```
   
 Now try building your code (this won't be too useful for now, but it checks that the installation went smoothly)
