@@ -10,7 +10,7 @@ You will be writing a 1 degree-of-freedom (1DOF) rocket simulator.
 As part of the Dynamics team you will be helping us to write a 6DOF rocket simulator. We hope that writing a simplified version yourself will help you understand the current simulation code, and get you started with learning Cython.
 
 ## How?
-In this README you are provided with all of the equations you will need to make your simulation. You can add more complex equations or algorithms if you like, however! Although this is an individual task, feel free to ask any questions, work together, and discuss what you need to do. 
+In this README you are provided with all of the equations you will need to make your simulation. You can add more complex equations or algorithms if you like, however! Although this is an individual task, feel free to ask any questions, work together, and discuss what you need to do. You may need to; this is a **tough** challenge!
 
 # Getting Started
 You will need to download some dependencies before you can get started. Start these downloads and then read some of the stuff below while they run.
@@ -60,6 +60,12 @@ in pure Python, in Cython you can instead specify that 'a' is an integer.
 cdef int a = 3
 ```
 Although this is more verbose, it can often drastically improve the speed of your program. If you are writing functions, you can do the same thing. You can find examples of this in *Modules/Thrust.pyx* file.
+### Adding Custom Cython (*.pyx*) Files
+Add the line 
+```
+from Modules.YourModuleName import *
+```
+to the *__init__.py* file.
 
 ## The Maths
 To reiterate, you **don't need to use the maths we give you** - it's just here as a reference. Feel free to play around with different equations to see what your rocket will do!
