@@ -67,7 +67,7 @@ We will model drag with the (hopefully familiar?) equation
 where you can approximate the wetted area by the rockets diameter of *D = 98 mm* and length of *L = 2.5 m*.
 The coefficient of drag is a function of Mach number is given by the following (completely made up) equation
 
-![equation](http://www.sciweavers.org/upload/Tex2Img_1532665492/eqn.png)
+![equation](http://www.sciweavers.org/upload/Tex2Img_1532667773/render.png)
 
 Density can be found using the state equation 
 
