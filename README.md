@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # Monash HPR Dynamics Induction Challenge
 Welcome to Monash High-Power(ed) Rocketry!
 
@@ -113,7 +111,7 @@ We need to solve the 2nd ODE (Newton's law)
 
 where *F/M* has been replaced by the general function *f(t,s,v)* for brevity. Note that it is a function of time, position (altitude), and velocity. Take a moment to think about which forces require each of these variables. Do you think we need any more information? Don't forget that mass is not constant for a rocket!
 
-To solve this ODE numerically, we need to reduce it to a pair of 1st order ODEs. This done simply by introducing velocity, leaving us with the pair of equations
+To solve this ODE numerically, we need to reduce it to a pair of 1st order ODEs. This is done by simply introducing velocity, leaving us with the pair of equations
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532666684/eqn.png)
 
@@ -133,5 +131,3 @@ To be more specific to our system of ODEs, we have
 Euler's method has a global truncation error of O(dt), so you will need to decrease the step size in your simulation to obtain good results (although this will take longer).
 
 If you have trouble with anything described above **ask questions!** This exercise should be challenging, but ultimately fun.
-
-
