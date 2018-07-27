@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt     # MATLAB-style plotting
 import Modules.Drag as Drag         # the "as" syntax lets you use an alias (no need to write Modules. every time!)
 import Modules.Gravity as Gravity 
 import Modules.Thrust as Thrust 
+import Modules.Rocket as Rocket
+import Modules.Integrator as Integrator
 
 ## Initialisation
 
