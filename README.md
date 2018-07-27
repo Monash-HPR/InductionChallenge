@@ -49,6 +49,9 @@ If your terminal was filled with friendly compiler statements, you're good to go
 
 ## Tips
 Before we get to the maths, take a moment to read some of these tips.
+### Stuck?
+Running into a problem you just can't seem to solve? Getting a ridiculous error that looks like an alien language? Google your problem - 99% of the time someone else has answered your question on StackOverflow. If you are still stuck then **ask for help!** 
+
 ### Optimising Your Cython Code
 As Cython is compiled, you can assign types to variables to improve the speed of your program. For example, instead of writing 
 ```
