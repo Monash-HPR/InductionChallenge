@@ -1,6 +1,8 @@
 # Monash HPR Dynamics Induction Challenge
 Welcome to Monash High-Power(ed) Rocketry!
 
+<img src="https://user-images.githubusercontent.com/22362913/42794851-7ba4ab10-89c4-11e8-8960-97f0f3f32b98.png" width="200">
+
 ## What?
 You will be writing a 1 degree-of-freedom (1DOF) rocket simulator.
 
