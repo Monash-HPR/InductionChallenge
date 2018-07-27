@@ -15,15 +15,14 @@ In this README you are provided with all of the equations you will need to make 
 # Getting Started
 You will need to download some dependencies before you can get started. Start these downloads and then read some of the stuff below while they run.
 
-Run the following command (copy it and then pase it in your terminal using the middle mouse button)
+Run the following command (copy it and then paste it in your terminal using the middle mouse button). You will need to type your password before it will begin.
 ```
 sudo apt-get update && sudo apt-get install build-essential git python3 cython3 python3-numpy python3-matplotlib python3-scipy -y
 ```
 
-Once you've installed everything you need, make a git directory with the commands
+Once you've installed everything you need, make a git directory with the command
 ```
-cd ~
-mkdir git
+cd ~ && mkdir git && cd git
 ```
 
 Then clone this repository to get all of the juicy boilerplate code
@@ -46,7 +45,7 @@ python3 setup.py build_ext --inplace
 You may as well start memorising the line above, because you will be typing it a lot!
 
 If your terminal was filled with friendly compiler statements, you're good to go.
-(FATAL ERROR, MISSING DEPENDENCY, and things to that effect aren't very friendly fyi)
+(FATAL ERROR, MISSING DEPENDENCY, and things to that effect aren't very friendly)
 
 ## Tips
 Before we get to the maths, take a moment to read some of these tips.
@@ -101,7 +100,7 @@ Thrust will be modelled by another made up equation (although its profile approx
 
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532665925/eqn.png)
 
-where we will use a peak thrust of *T0 = 3000 N* and a burnout time of *tB = 4.5 s*. This equation mimics the behaviour of the N3300 motor that will likely be used to launch to 30,000 ft.
+where we will use a peak thrust of *T0 = 3000 N* and a burnout time of *tB = 4.5 s*. This equation mimics the behaviour of the AeroTech N3300 motor that will likely be used to launch to 30,000 ft.
 
 ### Mass
 As your rocket motor burns, the total mass of the rocket will fall. For simplicity, we will assume a linear mass burn rate while the motor is running.
@@ -148,5 +147,7 @@ To be more specific to our system of ODEs, we have
 ![equation](http://www.sciweavers.org/upload/Tex2Img_1532666868/eqn.png)
 
 Euler's method has a global truncation error of O(dt), so you will need to decrease the step size in your simulation to obtain good results (although this will take longer).
+
+As you can see from the maths above, your integrator function will require many inputs, and will have to store the new position and velocity before returning them. One way to do this is to pass a class instance to the function which contains all of the information it needs. You could use the *State* class for this (HINT HINT).
 
 If you have trouble with anything described above **ask questions!** This exercise should be challenging, but ultimately fun.
