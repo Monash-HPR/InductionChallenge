@@ -1,5 +1,5 @@
 # Monash HPR Dynamics Induction Challenge
-Welcome to Monash High-Power(ed) Rocketry!
+Welcome to Monash High-Power(ed) Rocketry!!
 
 <img src="https://user-images.githubusercontent.com/22362913/42794851-7ba4ab10-89c4-11e8-8960-97f0f3f32b98.png" width="200">
 
@@ -37,7 +37,7 @@ git checkout -b <name>
 git checkout <name>
 git push origin <name>
 ```
-  
+
 Now try building your code (this won't be too useful for now, but it checks that the installation went smoothly)
 ```
 python3 setup.py build_ext --inplace
@@ -50,10 +50,10 @@ If your terminal was filled with friendly compiler statements, you're good to go
 ## Tips
 Before we get to the maths, take a moment to read some of these tips.
 ### Stuck?
-Running into a problem you just can't seem to solve? Getting a ridiculous error that looks like an alien language? Google your problem - 99% of the time someone else has answered your question on StackOverflow. If you are still stuck then **ask for help!** 
+Running into a problem you just can't seem to solve? Getting a ridiculous error that looks like an alien language? Google your problem - 99% of the time someone else has answered your question on StackOverflow. If you are still stuck then **ask for help!**
 
 ### Optimising Your Cython Code
-As Cython is compiled, you can assign types to variables to improve the speed of your program. For example, instead of writing 
+As Cython is compiled, you can assign types to variables to improve the speed of your program. For example, instead of writing
 ```
 a = 3
 ```
@@ -63,7 +63,7 @@ cdef int a = 3
 ```
 Although this is more verbose, it can often drastically improve the speed of your program. If you are writing functions, you can do the same thing. You can find examples of this in *Modules/Thrust.pyx* file.
 ### Adding Custom Cython (*.pyx*) Files
-Add the line 
+Add the line
 ```
 from Modules.YourModuleName import *
 ```
