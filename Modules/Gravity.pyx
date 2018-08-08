@@ -1,3 +1,4 @@
-def getForce():
-  # Write your code here, then delete the "pass" statement below
-  pass
+import math
+def getForce(mass, altitude):
+  g = 3.986e14/math.pow(6378137.0+altitude,2)
+  return (mass*g)
