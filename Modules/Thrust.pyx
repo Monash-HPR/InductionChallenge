@@ -1,19 +1,32 @@
-# You should use numpy for some of the maths functions you will need to call
-import numpy as np 
 
-# This is an example of using a Python function as a way to call a C function
+import numpy as np
+from math import exp
+from math import log
+thrust_peak = 3000
+time_burnout = 4.5
+
+
+
+
 def getForce( double t):
   return c_getForce( t)
-# This is the C-style function
-# Note the return type (double) and argument type (also a double)
-# It has a different name to the Python function to distinguish it
+
 cdef double c_getForce( double t):
-  # Write your code here, then delete the statement below
-  return 0.0
+#will return zero thrust after t>0 since the eqaution goes negative after that
+  if ( t <= 4.5):
+    thrust = thrust_peak * ( 1 - ( 10 ** (-5)) * exp( t * log(100000) / time_burnout))
+    return thrust
+  else:
+    return 0
 
 
-# Try writing another C-style function
-def getFuelBurned():
-  return c_getFuelBurned()
-cdef c_getFuelBurned():
-  return 
+
+def getFuelBurned( double dt, double mass_fuel):
+  return c_getFuelBurned( dt, mass_fuel)
+cdef c_getFuelBurned( double dt, double mass_fuel):
+#will return zero fuel mass after it reaches zero since the eqaution goes neg.
+  if (mass_fuel<=0):
+    return 0
+  else:
+    mass_fuel = mass_fuel - (mass_fuel / time_burnout)*dt
+  return mass_fuel
