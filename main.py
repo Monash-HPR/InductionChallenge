@@ -1,6 +1,6 @@
 __author__ = 'Hamish Self'
 
-import Code.sim_code as s
+import python_sim_code as s
 import matplotlib.pyplot as plt
 
 # Rocket Data
