@@ -2,16 +2,16 @@
 class Rocket():
   # Every class needs to be initialised in some way
   # We will use it to provide some default values
-  def __init__(self):
-    self.mass = 1
-    self.area = 1
+  def __init__(self,mass,area):
+    self.mass = mass;
+    self.surface = area;
 
   # This is an example of using a Python @property decorator
   # It lets you perform some operations every time Rocket.area is accessed
   # Can you think of a way to take advantage of this?
-  @property 
+  @property
   def area(self):
-    return self.area
+    return self.surface;
 
 
   def getMass(self):

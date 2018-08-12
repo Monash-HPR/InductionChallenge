@@ -1,3 +1,6 @@
-def getForce():
-  # Write your code here, then delete the "pass" statement below
-  pass
+def Gravity(H):
+    GM=3.986*(10**14);
+    Re=6378137;
+
+    gravitation= GM/(Re+H)**2
+    return gravitation
