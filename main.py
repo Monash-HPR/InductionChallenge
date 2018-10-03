@@ -19,7 +19,7 @@ vel_0 = 0                           # initial velocity, m s^-1
 initial_state = s.State(m_total_0, m_fuel_0, a_surf, T_0, t_B, alt_0, vel_0, t_0)
 print('Initial state: {}'.format(initial_state.summary()))
 
-state_array, sim_time = s.run_simulation(initial_state, dt=0.01)
+state_array, sim_time = s.run_simulation(initial_state, dt=0.1)
 print('Simulation time: {}s'.format(sim_time))
 
 # Post-processing steps
