@@ -17,9 +17,12 @@ vel_0 = 0                           # initial velocity, m s^-1
 # Initialise pre-launch state
 # State(m_total, m_fuel, T_0, t_B, altitude, velocity, acceleration, time)
 initial_state = s.State(m_total_0, m_fuel_0, a_surf, T_0, t_B, alt_0, vel_0, t_0)
-print('Initial state: {}'.format(initial_state.summary()))
+sum_info = initial_state.summary()
+for key, value in sum_info.items():
+    print('{} : {}'.format(key,value))
 
-state_array, sim_time = s.run_simulation(initial_state, dt=0.1)
+state_array, sim_time = s.run_simulation(initial_state, dt=0.01)
+print('Timesteps (# States): {}'.format(len(state_array)))
 print('Simulation time: {}s'.format(sim_time))
 
 # Post-processing steps

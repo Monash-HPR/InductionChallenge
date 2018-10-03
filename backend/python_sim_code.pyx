@@ -1,4 +1,5 @@
 # Dependencies
+#cimport numpy as np
 import numpy as np
 import copy
 import time
@@ -113,11 +114,11 @@ class State:
     # Summary method
     # THIS IS BAD BUT IT WORKS, FIX IF I CAN BE FUCKED
     def summary(self):
-        d = {'total mass': self.mass_rocket(),
-             'time': self.time,
-             'altitude': self.alt,
-             'velocity': self.vel,
-             'acceleration': self.net_accel()
+        d = {'total mass (kg)': self.mass_rocket(),
+             'time (s)': self.time,
+             'altitude (m)': self.alt,
+             'velocity (m/s)': self.vel,
+             'acceleratio (m/s^2)n': self.net_accel()
              }
         return d
 
@@ -202,7 +203,7 @@ def run_simulation(state_0, dt=0.01):
 
     # storage array
     #state_record = np.array([state_0])
-    state_record = np.empty([1000000],dtype=object) # array of None
+    state_record = np.empty([50000],dtype=object) # array of None
     state_record[0] = state_0
     apogee = 0
     time_apogee = 0
